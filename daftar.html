@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Pengguna</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Daftar Pengguna</h1>
+        <nav>
+            <a href="index.html">Utama</a>
+            <a href="daftar.html">Daftar</a>
+            <a href="login.html">Log Masuk</a>
+            <a href="carian.html">Carian</a>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="daftarForm">
+            <label>Nama</label>
+            <input type="text" id="nama" required>
+
+            <label>Nama Pengguna</label>
+            <input type="text" id="username" required>
+
+            <label>E-mel</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Daftar</button>
+        </form>
+
+        <p id="mesej"></p>
+    </div>
+
+    <footer>
+        <p>© 2026 Sistem Direktori Pengguna. Dibina untuk pengurusan pengguna mudah dan ringkas.</p>
+    </footer>
+
+        <script type="module">
+            import { initValidation } from './assets/js/validation.js';
+            initValidation();
+        </script>
+</body>
+</html>

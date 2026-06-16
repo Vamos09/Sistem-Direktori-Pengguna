@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Carian Pengguna</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Carian Pengguna</h1>
+        <nav>
+            <a href="index.html">Utama</a>
+            <a href="daftar.html">Daftar</a>
+            <a href="login.html">Log Masuk</a>
+            <a href="carian.html">Carian</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="toolbar">
+            <input type="text" id="searchInput" placeholder="Cari nama pengguna...">
+            <button onclick="dapatkanData()">Papar Data API</button>
+            <button class="danger" onclick="hapusSemuaData()">Hapus Semua Data Didaftar</button>
+        </div>
+
+        <p id="status"></p>
+        <div id="senaraiPengguna" class="grid"></div>
+    </div>
+
+    <footer>
+        <p>© 2026 Sistem Direktori Pengguna. Dibina untuk pengurusan pengguna mudah dan ringkas.</p>
+    </footer>
+
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
